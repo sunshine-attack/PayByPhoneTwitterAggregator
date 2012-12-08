@@ -1,4 +1,5 @@
 ﻿using PayByPhoneTwitterAggregator.Entities;
+using PayByPhoneTwitterAggregator.Entities.Interfaces;
 using PayByPhoneTwitterAggregator.Models;
 using PayByPhoneTwitterAggregator.Services.Interfaces;
 using System;

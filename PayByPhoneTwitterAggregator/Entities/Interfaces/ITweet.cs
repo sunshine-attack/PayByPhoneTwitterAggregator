@@ -8,8 +8,8 @@ namespace PayByPhoneTwitterAggregator.Entities.Interfaces
 {
     interface ITweet
     {
-        public DateTime DateAndTime { get; set; }
-        public String Details { get; set; }
-        public String User { get; set; }
+         DateTime DateAndTime { get; set; }
+         String Details { get; set; }
+         String User { get; set; }
     }
 }

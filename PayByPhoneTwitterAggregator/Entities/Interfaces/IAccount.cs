@@ -8,9 +8,9 @@ namespace PayByPhoneTwitterAggregator.Entities.Interfaces
 {
     interface IAccount
     {
-        public String Name { get; set; }
-        public List<Tweet> Tweets { get; set; }
-        public int TotalTweets{ get; set; }
-        public int TotalNumberofTimesAnotherUserWasMentioned{ get; set; }
+         String Name { get; set; }
+         List<Tweet> Tweets { get; set; }
+         int TotalTweets{ get; set; }
+         int TotalNumberofTimesAnotherUserWasMentioned{ get; set; }
     }
 }

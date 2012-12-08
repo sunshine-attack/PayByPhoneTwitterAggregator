@@ -1,4 +1,4 @@
-﻿using PayByPhoneTwitterAggregator.Entities.Interfaces;
+﻿using PayByPhoneTwitterAggregator.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace PayByPhoneTwitterAggregator.Services.Interfaces
 {
-    interface ICalculateTweetAggregates
+    public interface ICalculateTweetAggregates
     {
-         public void CalculateTotalTweets(ref IAccount account);
-         public void CalculateTotalNumberofTimesAnotherUserWasMentioned(ref IAccount account);
+           void CalculateTotalTweets(ref Account account);
+           void CalculateTotalNumberofTimesAnotherUserWasMentioned(ref Account account);
     }
 }

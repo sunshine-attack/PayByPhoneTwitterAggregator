@@ -15,7 +15,7 @@ namespace UnitTests
             var expected = "PayByPhone";
 
             //Act
-            account.Name = expected;
+            account.Name = "poof";//expected;
 
             //Assert
             Assert.Equal(expected, account.Name);

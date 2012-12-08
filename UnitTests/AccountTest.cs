@@ -94,7 +94,7 @@ namespace UnitTests
         {
             //Arrange
             var expected = "Account Name";
-            var account = new Account("Account Name");
+            var account = new Account(expected);
 
             //Assert
             Assert.Equal(expected, account.Name);

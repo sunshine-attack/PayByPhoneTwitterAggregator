@@ -29,9 +29,9 @@ namespace PayByPhoneTwitterAggregator.Controllers
             accountDetailsService = new LoadAccountDetailsService(twitterAccessService);
 
             accountManager = new AccountManager(accountDetailsService);
-            accountManager.CreateAccount("pay_by_phone");
-            accountManager.CreateAccount("PayByPhone");
-            accountManager.CreateAccount("PayByPhone_UK");
+            accountManager.CreateEmptyAccount("pay_by_phone");
+            accountManager.CreateEmptyAccount("PayByPhone");
+            accountManager.CreateEmptyAccount("PayByPhone_UK");
 
             twitterResultService = new FormatTweetResultService();
             accounts = accountManager.GetAccounts();

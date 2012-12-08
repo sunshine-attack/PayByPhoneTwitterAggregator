@@ -37,3 +37,39 @@ C:\Users\jtorgers\Documents\Visual Studio 2012\Projects\PayByPhoneTwitterAggrega
 C:\Users\jtorgers\Documents\Visual Studio 2012\Projects\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\obj\Debug\PayByPhoneTwitterAggregator.csprojResolveAssemblyReference.cache
 C:\Users\jtorgers\Documents\Visual Studio 2012\Projects\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\obj\Debug\PayByPhoneTwitterAggregator.dll
 C:\Users\jtorgers\Documents\Visual Studio 2012\Projects\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\obj\Debug\PayByPhoneTwitterAggregator.pdb
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\PayByPhoneTwitterAggregator.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\PayByPhoneTwitterAggregator.pdb
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\Antlr3.Runtime.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\EntityFramework.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\Hammock.ClientProfile.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\Hammock.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\Microsoft.Web.Infrastructure.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\Newtonsoft.Json.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Net.Http.Formatting.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.Helpers.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.Http.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.Http.WebHost.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.Mvc.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.Optimization.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.Providers.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.Razor.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.WebPages.Deployment.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.WebPages.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.WebPages.Razor.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\TweetSharp.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\WebGrease.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\Hammock.pdb
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\Newtonsoft.Json.xml
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\EntityFramework.xml
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Net.Http.Formatting.xml
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.Helpers.xml
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.Http.xml
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.Http.WebHost.xml
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.Mvc.xml
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.Razor.xml
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.WebPages.xml
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.WebPages.Deployment.xml
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.Web.WebPages.Razor.xml
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\TweetSharp.pdb
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\obj\Debug\PayByPhoneTwitterAggregator.dll
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\obj\Debug\PayByPhoneTwitterAggregator.pdb

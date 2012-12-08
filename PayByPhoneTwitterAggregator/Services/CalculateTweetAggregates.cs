@@ -7,7 +7,7 @@ using System.Web;
 
 namespace PayByPhoneTwitterAggregator.Services
 {
-    public class CalculateTweetAggregates : ICalculateTweetAggregates
+    public class CalculateTweetAggregates:ICalculateTweetAggregates
     {
         public void CalculateTotalTweets(ref Account account)
         {
@@ -16,7 +16,6 @@ namespace PayByPhoneTwitterAggregator.Services
 
         public void CalculateTotalNumberofTimesAnotherUserWasMentioned(ref Account account)
         {
-
             int mentionedUserCount = 0;
 
             foreach (var tweet in account.Tweets)

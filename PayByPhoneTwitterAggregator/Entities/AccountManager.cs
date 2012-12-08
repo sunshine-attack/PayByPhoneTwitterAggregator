@@ -18,7 +18,7 @@ namespace PayByPhoneTwitterAggregator.Entities
             accounts = new List<Account>();
         }
 
-        public void CreateAccount(String name)
+        public void CreateEmptyAccount(String name)
         {
             var account = new Account(name);
             
