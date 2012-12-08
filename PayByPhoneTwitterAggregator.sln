@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayByPhoneTwitterAggregator", "PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator.csproj", "{743E1961-4C87-4BB6-B9B5-5373BD99CA2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{EDFBFE7B-E190-4B76-B9D1-663C023AAB5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{743E1961-4C87-4BB6-B9B5-5373BD99CA2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{743E1961-4C87-4BB6-B9B5-5373BD99CA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{743E1961-4C87-4BB6-B9B5-5373BD99CA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{743E1961-4C87-4BB6-B9B5-5373BD99CA2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDFBFE7B-E190-4B76-B9D1-663C023AAB5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDFBFE7B-E190-4B76-B9D1-663C023AAB5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDFBFE7B-E190-4B76-B9D1-663C023AAB5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDFBFE7B-E190-4B76-B9D1-663C023AAB5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+C:\Users\jtorgers\Documents\Visual Studio 2012\Projects\PayByPhoneTwitterAggregator\TweeterAccess\bin\Debug\TweeterAccess.dll
+C:\Users\jtorgers\Documents\Visual Studio 2012\Projects\PayByPhoneTwitterAggregator\TweeterAccess\bin\Debug\TweeterAccess.pdb
+C:\Users\jtorgers\Documents\Visual Studio 2012\Projects\PayByPhoneTwitterAggregator\TweeterAccess\obj\Debug\TweeterAccess.csprojResolveAssemblyReference.cache
+C:\Users\jtorgers\Documents\Visual Studio 2012\Projects\PayByPhoneTwitterAggregator\TweeterAccess\obj\Debug\TweeterAccess.dll
+C:\Users\jtorgers\Documents\Visual Studio 2012\Projects\PayByPhoneTwitterAggregator\TweeterAccess\obj\Debug\TweeterAccess.pdb
