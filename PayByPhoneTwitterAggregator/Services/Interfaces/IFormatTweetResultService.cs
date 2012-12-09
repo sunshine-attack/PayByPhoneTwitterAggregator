@@ -1,4 +1,5 @@
 ﻿using PayByPhoneTwitterAggregator.Entities;
+using PayByPhoneTwitterAggregator.Entities.Interfaces;
 using PayByPhoneTwitterAggregator.Models;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,6 @@ namespace PayByPhoneTwitterAggregator.Services.Interfaces
 {
     public interface IFormatTweetResultService
     {
-        TweetResult CreateTweetResult(List<Account> accounts);
+        TweetResult CreateTweetResult(List<IAccount> accounts);
     }
 }

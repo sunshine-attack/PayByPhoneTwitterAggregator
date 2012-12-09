@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using PayByPhoneTwitterAggregator.Entities.Interfaces;
+using PayByPhoneTwitterAggregator.Services.Interfaces;
 
 namespace PayByPhoneTwitterAggregator.Entities
 {
@@ -21,7 +22,6 @@ namespace PayByPhoneTwitterAggregator.Entities
         public void CreateEmptyAccount(String name)
         {
             var account = new Account(name);
-            
             accountDetailsService.Populate(ref account);
             accounts.Add(account);
         }

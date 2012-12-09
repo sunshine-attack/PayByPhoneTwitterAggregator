@@ -15,7 +15,6 @@ namespace PayByPhoneTwitterAggregator.Controllers
 
     public class TwitterController : ApiController
     {
-     
         LoadAccountDetailsService accountDetailsService;
         TwitterAccessService twitterAccessService;
         AccountManager accountManager;
@@ -33,8 +32,9 @@ namespace PayByPhoneTwitterAggregator.Controllers
             accountManager.CreateEmptyAccount("PayByPhone");
             accountManager.CreateEmptyAccount("PayByPhone_UK");
 
-            twitterResultService = new FormatTweetResultService();
             accounts = accountManager.GetAccounts();
+
+            twitterResultService = new FormatTweetResultService();
             tweetResult = twitterResultService.CreateTweetResult(accounts);
         }
 

@@ -135,9 +135,9 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\TwitterController.cs" />
     <Compile Include="Entities\Account.cs" />
-    <Compile Include="Entities\AccountManager.cs" />
+    <Compile Include="Services\AccountManager.cs" />
     <Compile Include="Entities\Interfaces\IAccount.cs" />
-    <Compile Include="Entities\Interfaces\IAccountManager.cs" />
+    <Compile Include="Services\Interfaces\IAccountManager.cs" />
     <Compile Include="Entities\Interfaces\ITweet.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -152,7 +152,7 @@
     </Compile>
     <Compile Include="Services\LoadAccountDetailsService.cs" />
     <Compile Include="Services\CalculateTweetAggregates.cs" />
-    <Compile Include="Services\Interfaces\IAccountDetailsService.cs" />
+    <Compile Include="Services\Interfaces\ILoadAccountDetailsService.cs" />
     <Compile Include="Services\Interfaces\ICalculateTweetAggregates.cs" />
     <Compile Include="Services\Interfaces\IFormatTweetResultService.cs" />
     <Compile Include="Services\FormatTweetResultService.cs" />

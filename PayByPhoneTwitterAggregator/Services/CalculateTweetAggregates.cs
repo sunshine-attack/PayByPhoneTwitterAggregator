@@ -1,4 +1,5 @@
 ﻿using PayByPhoneTwitterAggregator.Entities;
+using PayByPhoneTwitterAggregator.Entities.Interfaces;
 using PayByPhoneTwitterAggregator.Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -9,12 +10,12 @@ namespace PayByPhoneTwitterAggregator.Services
 {
     public class CalculateTweetAggregates:ICalculateTweetAggregates
     {
-        public void CalculateTotalTweets(ref Account account)
+        public int CalculateTotalTweets(IAccount account)
         {
-            account.TotalTweets = account.Tweets.Count();
+            return account.Tweets.Count();
         }
 
-        public void CalculateTotalNumberofTimesAnotherUserWasMentioned(ref Account account)
+        public int CalculateTotalNumberofTimesAnotherUserWasMentioned(IAccount account)
         {
             int mentionedUserCount = 0;
 
@@ -23,7 +24,7 @@ namespace PayByPhoneTwitterAggregator.Services
                 if (tweet.User != account.Name) mentionedUserCount++;
             }
 
-            account.TotalNumberofTimesAnotherUserWasMentioned = mentionedUserCount;
+            return mentionedUserCount;
         }
 
     }

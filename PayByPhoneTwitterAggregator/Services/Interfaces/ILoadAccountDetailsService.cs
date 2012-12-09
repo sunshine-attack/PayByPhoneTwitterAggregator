@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PayByPhoneTwitterAggregator.Services.Interfaces
 {
-    interface IAccountDetailsService
+    interface ILoadAccountDetailsService
     {
     }
 }

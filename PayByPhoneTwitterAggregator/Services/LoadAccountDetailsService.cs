@@ -24,8 +24,9 @@ namespace PayByPhoneTwitterAggregator.Services
         public void Populate(ref Account account)
         {
             PopulateTweetsForLastTwoWeeks(ref account);
-            calculateTweetAggregates.CalculateTotalTweets(ref account);
-            calculateTweetAggregates.CalculateTotalNumberofTimesAnotherUserWasMentioned(ref account);
+            account.TotalTweets = calculateTweetAggregates.CalculateTotalTweets(account);
+            account.TotalNumberofTimesAnotherUserWasMentioned = 
+                calculateTweetAggregates.CalculateTotalNumberofTimesAnotherUserWasMentioned(account);
         }
 
         private void PopulateTweetsForLastTwoWeeks(ref Account account)

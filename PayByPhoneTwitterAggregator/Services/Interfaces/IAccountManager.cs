@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace PayByPhoneTwitterAggregator.Services.Interfaces
 {
-    public interface ICalculateTweetAggregates
+    interface IAccountManager
     {
-           int CalculateTotalTweets(IAccount account);
-           int CalculateTotalNumberofTimesAnotherUserWasMentioned(IAccount account);
+         void CreateEmptyAccount(String name);
+         List<IAccount> GetAccounts();
     }
 }
