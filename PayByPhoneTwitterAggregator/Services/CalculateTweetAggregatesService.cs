@@ -6,9 +6,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+/*
+ * Aggregates the tweet data for the Account Entities
+ */
+
 namespace PayByPhoneTwitterAggregator.Services
 {
-    public class CalculateTweetAggregates:ICalculateTweetAggregates
+    public class CalculateTweetAggregatesService:ICalculateTweetAggregatesService
     {
         public int CalculateTotalTweets(IAccount account)
         {

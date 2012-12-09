@@ -7,16 +7,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+
+/*
+ * Formats the Account entities into a TweetResponse model.
+ */
+
 namespace PayByPhoneTwitterAggregator.Services
 {
     public class FormatTweetResultService : IFormatTweetResultService
     {
-        TweetResult tweetResult;
+        TweetResponse tweetResult;
 
-        public TweetResult CreateTweetResult(List<IAccount> accounts)
+        public TweetResponse CreateTweetResult(List<IAccount> accounts)
         {
 
-            tweetResult = new TweetResult();
+            tweetResult = new TweetResponse();
             var tweets = new List<Models.Tweet>();
 
             foreach (var account in accounts)

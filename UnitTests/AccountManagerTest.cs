@@ -3,7 +3,7 @@ using Xunit;
 using PayByPhoneTwitterAggregator.Entities;
 using System.Collections.Generic;
 using PayByPhoneTwitterAggregator.Services;
-using TwitterAccess;
+using PayByPhoneTwitterAggregator;
 
 namespace UnitTest
 {
@@ -15,12 +15,13 @@ namespace UnitTest
         {
             //Arrange
             var twitterAccessService = new TwitterAccessService();
-            var accountDetailsService = new LoadAccountDetailsService(twitterAccessService);
-            var accountManager = new AccountManager(accountDetailsService);
+            var calculateTweetAggregates = new CalculateTweetAggregatesService();
+            var loadAccountDetailsService = new LoadAccountDetailsService(twitterAccessService, calculateTweetAggregates);
+            var accountManager = new AccountManagerService(loadAccountDetailsService);
             var expected = 1;
 
             //Act
-            accountManager.CreateAccount("PayByPhone_UK");
+            accountManager.CreateAccount("PayByPhone_UK", 3);
             var accounts = accountManager.GetAccounts();
 
             //Assert
@@ -33,11 +34,12 @@ namespace UnitTest
         {
             //Arrange
             var twitterAccessService = new TwitterAccessService();
-            var accountDetailsService = new LoadAccountDetailsService(twitterAccessService);
-            var accountManager = new AccountManager(accountDetailsService);
+            var calculateTweetAggregates = new CalculateTweetAggregatesService();
+            var loadAccountDetailsService = new LoadAccountDetailsService(twitterAccessService, calculateTweetAggregates);
+            var accountManager = new AccountManagerService(loadAccountDetailsService);
 
             //Act
-            accountManager.CreateAccount("PayByPhone_UK");
+            accountManager.CreateAccount("PayByPhone_UK", 14);
 
             //Assert
             var accounts = accountManager.GetAccounts();

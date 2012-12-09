@@ -55,6 +55,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AccountTest.cs" />
     <Compile Include="FormatTweetResultServiceTest.cs" />
+    <Compile Include="LoadAccountDetailsServiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

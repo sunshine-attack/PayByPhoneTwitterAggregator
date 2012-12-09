@@ -9,10 +9,13 @@ namespace PayByPhoneTwitterAggregator
     {
         public static void Register(HttpConfiguration config)
         {
+
+            // matches /api/twitter/{action}/id
             config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                name: "DefaultApi2",
+                routeTemplate: "api/{controller}/{action}/{id}",
+                defaults: new { id = RouteParameter.Optional },
+                constraints: new { controller = "twitter" }
             );
 
             var appXmlType = config.Formatters.XmlFormatter.SupportedMediaTypes.FirstOrDefault(t => t.MediaType == "application/xml");

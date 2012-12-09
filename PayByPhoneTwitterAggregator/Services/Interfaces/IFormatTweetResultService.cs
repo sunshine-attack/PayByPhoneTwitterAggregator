@@ -11,6 +11,6 @@ namespace PayByPhoneTwitterAggregator.Services.Interfaces
 {
     public interface IFormatTweetResultService
     {
-        TweetResult CreateTweetResult(List<IAccount> accounts);
+        TweetResponse CreateTweetResult(List<IAccount> accounts);
     }
 }

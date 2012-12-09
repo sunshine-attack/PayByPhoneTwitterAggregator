@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace PayByPhoneTwitterAggregator.Services.Interfaces
 {
-    interface IAccountManager
+    interface IAccountManagerService
     {
-         void CreateAccount(String name);
+         void CreateAccount(String name, int days);
          List<IAccount> GetAccounts();
     }
 }

@@ -12,6 +12,15 @@ On your computer please complete the following steps.:
 
 Note: The JSONView extension formats the JSON result set into human friendly form and makes the results easier to analyze. You are welcomed to visit the URL in step 5 with other tools of your preference in order to conduct testing and analysis.
 
+If you wish to complete additional testing for different period lengths, visit the following URL, [http://paybyphonetwitteraggregator.apphb.com/api/Twitter/twitterfeedByDays/14], replacing 14 with length of the period you wish to test. 
+
+Examples:
+* 5-day period: http://paybyphonetwitteraggregator.apphb.com/api/Twitter/twitterfeedByDays/5
+* 10-day period: http://paybyphonetwitteraggregator.apphb.com/api/Twitter/twitterfeedByDays/10
+
+Note: The Twitter API and the account you are accessing this application with limits requests to 350 in a 24-hour timespan. If you test for too many days or too many times the response data will not return and you will have to wait until the following day
+
+
 ====Requirements:====
 * Chrome Browser
 * JSON View Extenstion for Chrome

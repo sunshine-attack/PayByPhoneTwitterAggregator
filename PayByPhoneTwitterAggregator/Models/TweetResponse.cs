@@ -6,9 +6,9 @@ using System.Web;
 namespace PayByPhoneTwitterAggregator.Models
 {
 
-    public class TweetResult
+    public class TweetResponse
     {
-        public TweetResult()
+        public TweetResponse()
         {
             TotalTweetsPerAccount = new Dictionary<String, int>();
             TotalNumberofTimesAnotherUserWasMentionedPerAccount = new Dictionary<string, int>();

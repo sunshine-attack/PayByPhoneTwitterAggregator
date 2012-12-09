@@ -7,23 +7,28 @@ using PayByPhoneTwitterAggregator.Entities.Interfaces;
 using PayByPhoneTwitterAggregator.Services.Interfaces;
 using PayByPhoneTwitterAggregator.Entities;
 
+/*
+ * The AccountManager, manages the Account entities and acts as their repository. 
+ * Creating and loading them with data as needed
+ */
+
 namespace PayByPhoneTwitterAggregator.Services
 {
-    public class AccountManager:IAccountManager
+    public class AccountManagerService:IAccountManagerService
     {
-        LoadAccountDetailsService accountDetailsService;
+        LoadAccountDetailsService loadAccountDetailsService;
         List<IAccount> accounts;
 
-        public AccountManager(LoadAccountDetailsService accountDetailsService)
+        public AccountManagerService(LoadAccountDetailsService loadAccountDetailsService)
         {
-            this.accountDetailsService = accountDetailsService;
+            this.loadAccountDetailsService = loadAccountDetailsService;
             accounts = new List<IAccount>();
         }
 
-        public void CreateAccount(String name)
+        public void CreateAccount(String name, int days)
         {
             var account = new Account(name);
-            accountDetailsService.PopulatedAccount(account);
+            loadAccountDetailsService.PopulatedAccount(account, days);
             accounts.Add(account);
         }
 

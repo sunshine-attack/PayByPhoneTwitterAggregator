@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PayByPhoneTwitterAggregator.Services.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -9,9 +10,9 @@ using TweetSharp;
 
 
 
-namespace TwitterAccess
+namespace PayByPhoneTwitterAggregator.Services
 {
-        public class TwitterAccessService
+    public class TwitterAccessService : ITwitterAccessService
         {
             OAuthRequestToken token;
             TwitterService service;
@@ -35,7 +36,7 @@ namespace TwitterAccess
                
             }
 
-            public List<TwitterStatus> GetTweetsForLastTwoWeeks(String account)
+            public List<TwitterStatus> GetTweets(String account, int days)
             {
 
                 var twitterStatuses = new List<TwitterStatus>();
@@ -47,13 +48,13 @@ namespace TwitterAccess
 
                 while (service.Response.StatusCode == HttpStatusCode.OK && moreResults)
                 {
-                    
-                    var tweetsLimited = tweets.Where(x => x.CreatedDate > DateTime.Now.AddDays(-14));
+
+                    var tweetsLimited = tweets.Where(x => x.CreatedDate > DateTime.Now.AddDays(-days));
 
                     if (tweetsLimited.Count() > 0)
                     {
                         twitterStatuses.AddRange(tweetsLimited.ToList());
-                        pageNumber++;;
+                        pageNumber++; ;
                         tweets = service.ListTweetsOnSpecifiedUserTimeline(account, pageNumber, 20);
                     }
                     else
@@ -64,6 +65,11 @@ namespace TwitterAccess
                 }
 
                 return twitterStatuses;
+            }
+
+            public List<TwitterStatus> GetTweetsForLastTwoWeeks(String account)
+            {
+                return GetTweets(account, 14);
             }
 
         }
