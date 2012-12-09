@@ -32,7 +32,6 @@ namespace PayByPhoneTwitterAggregator.Services
             }
 
             var tweetsOrderedbyDate = tweets.OrderByDescending(x => x.DateAndTime);
-
             foreach (var tweet in tweetsOrderedbyDate)
             {
                 tweetResult.Tweets.Add(tweet);
@@ -40,6 +39,7 @@ namespace PayByPhoneTwitterAggregator.Services
 
             return tweetResult;
         }
+
     }
 
 }

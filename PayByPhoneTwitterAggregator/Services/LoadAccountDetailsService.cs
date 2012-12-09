@@ -7,6 +7,7 @@ using System.Web.Http;
 using PayByPhoneTwitterAggregator.Entities;
 using TwitterAccess;
 using PayByPhoneTwitterAggregator.Services.Interfaces;
+using PayByPhoneTwitterAggregator.Entities.Interfaces;
 
 namespace PayByPhoneTwitterAggregator.Services
 {
@@ -21,15 +22,16 @@ namespace PayByPhoneTwitterAggregator.Services
             calculateTweetAggregates = new CalculateTweetAggregates();
         }
 
-        public void Populate(ref Account account)
+        public void PopulatedAccount(IAccount account)
         {
-            PopulateTweetsForLastTwoWeeks(ref account);
+            PopulateTweetsForLastTwoWeeks(account);
             account.TotalTweets = calculateTweetAggregates.CalculateTotalTweets(account);
             account.TotalNumberofTimesAnotherUserWasMentioned = 
                 calculateTweetAggregates.CalculateTotalNumberofTimesAnotherUserWasMentioned(account);
+
         }
 
-        private void PopulateTweetsForLastTwoWeeks(ref Account account)
+        private void PopulateTweetsForLastTwoWeeks(IAccount account)
         {
             var searchResultList = twitterAccessService.GetTweetsForLastTwoWeeks(account.Name);
 

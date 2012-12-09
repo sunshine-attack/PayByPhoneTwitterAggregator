@@ -23,7 +23,7 @@ namespace PayByPhoneTwitterAggregator.Services
         public void CreateAccount(String name)
         {
             var account = new Account(name);
-            accountDetailsService.Populate(ref account);
+            accountDetailsService.PopulatedAccount(account);
             accounts.Add(account);
         }
 
