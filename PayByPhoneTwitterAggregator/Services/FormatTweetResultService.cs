@@ -17,6 +17,7 @@ namespace PayByPhoneTwitterAggregator.Services
         {
 
             tweetResult = new TweetResult();
+            var tweets = new List<Models.Tweet>();
 
             foreach (var account in accounts)
             {
@@ -25,13 +26,19 @@ namespace PayByPhoneTwitterAggregator.Services
 
                 foreach (var tweet in account.Tweets)
                 {
-                    tweetResult.Tweets.Add(new Models.Tweet { DateAndTime = tweet.DateAndTime, Details = tweet.Details, Account = account.Name });
+                    tweets.Add(new Models.Tweet { DateAndTime = tweet.DateAndTime, Details = tweet.Details, Account = account.Name });
                 }
 
             }
 
-            return tweetResult;
+            var tweetsOrderedbyDate = tweets.OrderByDescending(x => x.DateAndTime);
 
+            foreach (var tweet in tweetsOrderedbyDate)
+            {
+                tweetResult.Tweets.Add(tweet);
+            }
+
+            return tweetResult;
         }
     }
 

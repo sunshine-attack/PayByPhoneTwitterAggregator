@@ -12,6 +12,5 @@ namespace PayByPhoneTwitterAggregator.Entities
         public DateTime DateAndTime { get; set; }
         public String Details { get; set; }
         public int Mentions { get; set; }
-
     }
 }
