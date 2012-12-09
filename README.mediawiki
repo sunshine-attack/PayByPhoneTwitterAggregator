@@ -10,7 +10,7 @@ On your computer please complete the following steps.:
 # Visit [http://paybyphonetwitteraggregator.apphb.com/api/Twitter/twitterfeed]
 # Confirm the implementation details, as listed in the Implentation and Requirement document, are met
 
-Note: The JSONView extension formats the JSON result set into human friendly form and makes the results easier to analyze. You are welcomed to visit the URL in step 5 with other tools of preference in order to conduct testing and analysis.
+Note: The JSONView extension formats the JSON result set into human friendly form and makes the results easier to analyze. You are welcomed to visit the URL in step 5 with other tools of your preference in order to conduct testing and analysis.
 
 ====Requirements:====
 * Chrome Browser
