@@ -29,6 +29,7 @@ Note: The Twitter API and the account you are accessing this application with li
 ===Design===
 The TwitterControllerManages handles the requests for twitter information and delegates resposiblity to several services in order to carry out it's duties.
 
+
 The web service backing model, TweetResponse, contains the implementation specific definition for providing a response.
 
 The business model data is stored in the aggregate entity, Account. This entity and its aggregate parts manage the details associated with the twitter feed accounts.
