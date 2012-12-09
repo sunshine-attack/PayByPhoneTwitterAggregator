@@ -21,7 +21,7 @@ namespace PayByPhoneTwitterAggregator.Services
 
             foreach (var tweet in account.Tweets)
             {
-                if (tweet.User != account.Name) mentionedUserCount++;
+                mentionedUserCount += tweet.Mentions;
             }
 
             return mentionedUserCount;

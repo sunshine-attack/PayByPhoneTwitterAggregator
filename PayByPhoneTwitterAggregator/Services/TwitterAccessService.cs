@@ -39,29 +39,29 @@ namespace TwitterAccess
             {
 
                 var twitterStatuses = new List<TwitterStatus>();
-                //var pageNumber = 1;
-                //var moreResults = true;
-                //IEnumerable<TwitterStatus> tweets;
+                var pageNumber = 1;
+                var moreResults = true;
+                IEnumerable<TwitterStatus> tweets;
 
-                //tweets = service.ListTweetsOnSpecifiedUserTimeline(account, pageNumber, 20);
+                tweets = service.ListTweetsOnSpecifiedUserTimeline(account, pageNumber, 20);
 
-                //while (service.Response.StatusCode == HttpStatusCode.OK && moreResults)
-                //{
+                while (service.Response.StatusCode == HttpStatusCode.OK && moreResults)
+                {
                     
-                //    var tweetsLimited = tweets.Where(x => x.CreatedDate > DateTime.Now.AddDays(-14));
+                    var tweetsLimited = tweets.Where(x => x.CreatedDate > DateTime.Now.AddDays(-14));
 
-                //    if (tweetsLimited.Count() == 0)
-                //    {
-                //        twitterStatuses.AddRange(tweetsLimited.ToList());
-                //        pageNumber++;;
-                //        tweets = service.ListTweetsOnSpecifiedUserTimeline(account, pageNumber, 20);
-                //    }
-                //    else
-                //    {
-                //        moreResults = false;
-                //    }
+                    if (tweetsLimited.Count() > 0)
+                    {
+                        twitterStatuses.AddRange(tweetsLimited.ToList());
+                        pageNumber++;;
+                        tweets = service.ListTweetsOnSpecifiedUserTimeline(account, pageNumber, 20);
+                    }
+                    else
+                    {
+                        moreResults = false;
+                    }
 
-                //}
+                }
 
                 return twitterStatuses;
             }

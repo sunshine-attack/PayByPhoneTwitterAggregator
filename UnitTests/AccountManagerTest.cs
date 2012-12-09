@@ -5,11 +5,10 @@ using System.Collections.Generic;
 using PayByPhoneTwitterAggregator.Services;
 using TwitterAccess;
 
-namespace UnitTests
+namespace UnitTest
 {
     class AccountManagerTest
     {
-
 
         [Fact]
         public void WhenGetAccountIsCalledTheAccountsAreReturned()

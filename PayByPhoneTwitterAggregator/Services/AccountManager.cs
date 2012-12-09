@@ -5,8 +5,9 @@ using System.Linq;
 using System.Web;
 using PayByPhoneTwitterAggregator.Entities.Interfaces;
 using PayByPhoneTwitterAggregator.Services.Interfaces;
+using PayByPhoneTwitterAggregator.Entities;
 
-namespace PayByPhoneTwitterAggregator.Entities
+namespace PayByPhoneTwitterAggregator.Services
 {
     public class AccountManager:IAccountManager
     {

@@ -35,7 +35,7 @@ namespace PayByPhoneTwitterAggregator.Services
 
             foreach (var result in searchResultList)
             {
-                account.Tweets.Add(new Tweet { DateAndTime = result.CreatedDate, Details = result.Text, User = result.InReplyToScreenName });
+                account.Tweets.Add(new Tweet { DateAndTime = result.CreatedDate, Details = result.Text, Mentions = result.Entities.Mentions.Count });
             }
         }
     }

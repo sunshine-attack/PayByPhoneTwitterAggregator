@@ -73,3 +73,4 @@ D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\System.
 D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\bin\TweetSharp.pdb
 D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\obj\Debug\PayByPhoneTwitterAggregator.dll
 D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\obj\Debug\PayByPhoneTwitterAggregator.pdb
+D:\Downloads\PayByPhoneTwitterAggregator\PayByPhoneTwitterAggregator\obj\Debug\PayByPhoneTwitterAggregator.csprojResolveAssemblyReference.cache

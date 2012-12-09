@@ -10,6 +10,6 @@ namespace PayByPhoneTwitterAggregator.Entities.Interfaces
     {
          DateTime DateAndTime { get; set; }
          String Details { get; set; }
-         String User { get; set; }
+         int Mentions { get; set; }
     }
 }

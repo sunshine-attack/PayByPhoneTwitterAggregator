@@ -6,7 +6,7 @@
     <ProjectGuid>{EDFBFE7B-E190-4B76-B9D1-663C023AAB5A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UnitTests</RootNamespace>
+    <RootNamespace>UnitTest</RootNamespace>
     <AssemblyName>UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -51,9 +51,10 @@
   </Choose>
   <ItemGroup>
     <Compile Include="AccountManagerTest.cs" />
-    <Compile Include="CalculateTweetAggregates.cs" />
+    <Compile Include="CalculateTweetAggregatesTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AccountTest.cs" />
+    <Compile Include="FormatTweetResultServiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

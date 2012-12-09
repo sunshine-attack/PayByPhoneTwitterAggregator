@@ -1,4 +1,3 @@
-D:\Downloads\PayByPhoneTwitterAggregator\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
 D:\Downloads\PayByPhoneTwitterAggregator\UnitTests\bin\Debug\UnitTests.dll
 D:\Downloads\PayByPhoneTwitterAggregator\UnitTests\bin\Debug\UnitTests.pdb
 D:\Downloads\PayByPhoneTwitterAggregator\UnitTests\bin\Debug\PayByPhoneTwitterAggregator.dll
@@ -19,5 +18,6 @@ D:\Downloads\PayByPhoneTwitterAggregator\UnitTests\bin\Debug\TweetSharp.pdb
 D:\Downloads\PayByPhoneTwitterAggregator\UnitTests\bin\Debug\System.Net.Http.Formatting.xml
 D:\Downloads\PayByPhoneTwitterAggregator\UnitTests\bin\Debug\System.Web.Http.WebHost.xml
 D:\Downloads\PayByPhoneTwitterAggregator\UnitTests\bin\Debug\Newtonsoft.Json.xml
+D:\Downloads\PayByPhoneTwitterAggregator\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
 D:\Downloads\PayByPhoneTwitterAggregator\UnitTests\obj\Debug\UnitTests.dll
 D:\Downloads\PayByPhoneTwitterAggregator\UnitTests\obj\Debug\UnitTests.pdb

@@ -4,7 +4,7 @@ using Xunit;
 using PayByPhoneTwitterAggregator.Entities;
 using System.Collections.Generic;
 
-namespace UnitTests
+namespace UnitTest
 {
     public class AccountTest 
     {
@@ -42,13 +42,13 @@ namespace UnitTests
             {
                 DateAndTime = DateTime.Now,
                 Details = "This is a tweet",
-                User = "PayByPhone"
+                Mentions = 5
             };
             var tweet2 = new Tweet()
             {
                 DateAndTime = DateTime.Now,
                 Details = "I'm tweeting",
-                User = "PayByPhone"
+                Mentions = 3
             };
 
             //Act
