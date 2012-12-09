@@ -7,10 +7,10 @@ On your computer please complete the following steps.:
 # Check if you have the Chrome browser installed
 # If you do not have Chrome installed, download and install Chrome from [https://www.google.com/intl/en/chrome/browser/]
 # Install the JSONView extension for Chrome from [https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc]
-#: Note - This extension will format the JSON result set into human friendly form and make the results easier to analyze
 # Visit [http://paybyphonetwitteraggregator.apphb.com/api/Twitter/twitterfeed]
 # Confirm the implementation details, as listed in the Implentation and Requirement document, are met
 
+Note: The JSONView extension formats the JSON result set into human friendly form and makes the results easier to analyze.
 
 ====Requirements:====
 * Chrome Browser
