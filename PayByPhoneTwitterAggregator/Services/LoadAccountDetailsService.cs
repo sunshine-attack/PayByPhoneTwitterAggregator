@@ -6,12 +6,12 @@ using System.Net.Http;
 using System.Web.Http;
 using PayByPhoneTwitterAggregator.Entities;
 using TwitterAccess;
+using PayByPhoneTwitterAggregator.Services.Interfaces;
 
 namespace PayByPhoneTwitterAggregator.Services
 {
-    public class LoadAccountDetailsService : ApiController
+    public class LoadAccountDetailsService : ILoadAccountDetailsService
     {
-
         TwitterAccessService twitterAccessService;
         CalculateTweetAggregates calculateTweetAggregates;
 

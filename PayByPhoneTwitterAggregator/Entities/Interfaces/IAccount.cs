@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PayByPhoneTwitterAggregator.Entities.Interfaces
 {
-    interface IAccount
+    public interface IAccount
     {
          String Name { get; set; }
          List<Tweet> Tweets { get; set; }

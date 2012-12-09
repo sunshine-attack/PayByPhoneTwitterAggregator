@@ -9,6 +9,7 @@ using PayByPhoneTwitterAggregator.Models;
 using PayByPhoneTwitterAggregator.Entities;
 using PayByPhoneTwitterAggregator.Services;
 using TwitterAccess;
+using PayByPhoneTwitterAggregator.Entities.Interfaces;
 
 namespace PayByPhoneTwitterAggregator.Controllers
 {
@@ -20,7 +21,7 @@ namespace PayByPhoneTwitterAggregator.Controllers
         AccountManager accountManager;
         FormatTweetResultService twitterResultService;
         TweetResult tweetResult;
-        List<Account> accounts; 
+        List<IAccount> accounts; 
 
         public TwitterController()
         {
@@ -28,9 +29,9 @@ namespace PayByPhoneTwitterAggregator.Controllers
             accountDetailsService = new LoadAccountDetailsService(twitterAccessService);
 
             accountManager = new AccountManager(accountDetailsService);
-            accountManager.CreateEmptyAccount("pay_by_phone");
-            accountManager.CreateEmptyAccount("PayByPhone");
-            accountManager.CreateEmptyAccount("PayByPhone_UK");
+            accountManager.CreateAccount("pay_by_phone");
+            accountManager.CreateAccount("PayByPhone");
+            accountManager.CreateAccount("PayByPhone_UK");
 
             accounts = accountManager.GetAccounts();
 

@@ -11,22 +11,22 @@ namespace PayByPhoneTwitterAggregator.Entities
     public class AccountManager:IAccountManager
     {
         LoadAccountDetailsService accountDetailsService;
-        List<Account> accounts;
+        List<IAccount> accounts;
 
         public AccountManager(LoadAccountDetailsService accountDetailsService)
         {
             this.accountDetailsService = accountDetailsService;
-            accounts = new List<Account>();
+            accounts = new List<IAccount>();
         }
 
-        public void CreateEmptyAccount(String name)
+        public void CreateAccount(String name)
         {
             var account = new Account(name);
             accountDetailsService.Populate(ref account);
             accounts.Add(account);
         }
 
-        public List<Account> GetAccounts()
+        public List<IAccount> GetAccounts()
         {
             return accounts;
         }

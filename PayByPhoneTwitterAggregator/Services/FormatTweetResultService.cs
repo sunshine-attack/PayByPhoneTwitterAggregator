@@ -13,7 +13,7 @@ namespace PayByPhoneTwitterAggregator.Services
     {
         TweetResult tweetResult;
 
-        public TweetResult CreateTweetResult(List<Account> accounts)
+        public TweetResult CreateTweetResult(List<IAccount> accounts)
         {
 
             tweetResult = new TweetResult();

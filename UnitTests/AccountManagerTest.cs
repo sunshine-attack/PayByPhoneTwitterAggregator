@@ -9,31 +9,28 @@ namespace UnitTests
 {
     class AccountManagerTest
     {
-        //LoadAccountDetailsService accountDetailsService;
-        //List<Account> accounts;
-
-        //public AccountManager(LoadAccountDetailsService accountDetailsService)
-        //{
-        //    this.accountDetailsService = accountDetailsService;
-        //    accounts = new List<Account>();
-        //}
-
-        //public void CreateEmptyAccount(String name)
-        //{
-        //    var account = new Account(name);
-            
-        //    accountDetailsService.Populate(ref account);
-        //    accounts.Add(account);
-        //}
-
-        //public List<Account> GetAccounts()
-        //{
-        //    return accounts;
-        //}
 
 
         [Fact]
-        public void WhenCreateEmptyAccountIsCalledAPopulateAccountIsCreated()
+        public void WhenGetAccountIsCalledTheAccountsAreReturned()
+        {
+            //Arrange
+            var twitterAccessService = new TwitterAccessService();
+            var accountDetailsService = new LoadAccountDetailsService(twitterAccessService);
+            var accountManager = new AccountManager(accountDetailsService);
+            var expected = 1;
+
+            //Act
+            accountManager.CreateAccount("PayByPhone_UK");
+            var accounts = accountManager.GetAccounts();
+
+            //Assert
+            Assert.Equal(expected, accounts.Count);
+
+        }
+
+        [Fact]
+        public void WhenCreateEmptyAccountIsCalledAPopulatedAccountIsCreated()
         {
             //Arrange
             var twitterAccessService = new TwitterAccessService();
@@ -41,16 +38,18 @@ namespace UnitTests
             var accountManager = new AccountManager(accountDetailsService);
 
             //Act
-            accountManager.CreateEmptyAccount("PayByPhone_UK");
-           
+            accountManager.CreateAccount("PayByPhone_UK");
+
             //Assert
             var accounts = accountManager.GetAccounts();
             foreach (var account in accounts)
-	        {
-		         Assert.True(account.Tweets.Count > 1);
+            {
                 Assert.NotNull(account.Name);
-                Assert(account.TotalTweets
-	        }
-        
+                Assert.True(account.Tweets.Count > 1);
+                Assert.True(account.TotalTweets > 1);
+            }
+
+        }
     }
+
 }

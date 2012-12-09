@@ -10,7 +10,7 @@ namespace PayByPhoneTwitterAggregator.Services.Interfaces
 {
     interface IAccountManager
     {
-         void CreateEmptyAccount(String name);
+         void CreateAccount(String name);
          List<IAccount> GetAccounts();
     }
 }
