@@ -1,0 +1,26 @@
+==PayByPhoneTwitterAggregator==
+Sample Twitter Aggregator for PayByPhone
+
+==User Acceptance Testing==
+On your computer please complete the following steps.
+
+# Check if you have the Chrome browser installed.
+# If you do not have the Chrome installed, download and install the Chrome from [https://www.google.com/intl/en/chrome/browser/]
+# Install the JSONView extension for Chrome from [https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc]
+## Note: This extension will format the result JSON result set into human friendly form and make the results easier to analyze. 
+# Confirm the implementation details, as listed in the Implentation and Requirement document, are met. 
+
+Requirements:
+* Chrome Browser
+* JSON View Extenstion for Chrome
+
+==Design and Technology Notes==
+
+The following tools were used in the development of this application:
+* ASP.Net MVC Web API - Web Application Framework
+* C# and .Net 4.5 - Language, Runtime, and Framework
+* TweetSharp Library
+* Visual Studio 2012 - IDE
+* Apphabor - Hosting and Continious Integration Testing
+* Xunit - Unit Testing Framework
+* Nuget - Third-Party Package Manager
