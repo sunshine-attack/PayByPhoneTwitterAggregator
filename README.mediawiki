@@ -27,7 +27,7 @@ Examples:
 Note: The Twitter API and the account you are accessing this application with limits requests to 350 in a 24-hour timespan. If you test for too many days or too many times the response data will not return and you will have to wait until the following day
 
 ===Design===
-* The TwitterControllerManages handles the requests for twitter information and delegates resposiblity to several services in order to carry out it's duties.
+* The TwitterControllerManages handles the requests for twitter information and delegates resposiblity to several services in order to carry out its duties.
 
 * The web service backing model, TweetResponse, contains the implementation specific definition for providing a response.
 

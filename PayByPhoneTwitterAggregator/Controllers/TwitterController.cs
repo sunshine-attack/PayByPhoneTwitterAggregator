@@ -14,7 +14,7 @@ using PayByPhoneTwitterAggregator.Entities.Interfaces;
 
 /*
  * The TwitterControllerManages handles the requests for twitter information and delegates resposiblity to several services
- * in order to carry out it's duties.
+ * in order to carry out its duties.
  * 
  * The web service backing model, TweetResponse, contains the implementation specific definition for providing a response.
  * 
